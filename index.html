@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="sv" data-theme="auto">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hästar – Fakta, raser och skötsel</title>
+    <meta name="description" content="En enkel, snabb och responsiv webbplats om hästar: raser, skötsel, galleri och kontakt." />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐴</text></svg>">
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Hoppa till innehåll</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#" class="brand" aria-label="Startsida">
+          <span class="logo">🐴</span>
+          <span class="brand-text">HÄSTAR</span>
+        </a>
+
+        <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Öppna meny">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+
+        <nav id="site-nav" class="site-nav" aria-label="Primär">
+          <ul>
+            <li><a href="#om">Om</a></li>
+            <li><a href="#raser">Raser</a></li>
+            <li><a href="#skotsel">Skötsel</a></li>
+            <li><a href="#galleri">Galleri</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+          </ul>
+          <button id="theme-toggle" class="theme-toggle" aria-label="Växla tema" title="Växla ljust/mörkt">
+            <span class="theme-icon" aria-hidden="true">🌗</span>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero" role="banner" aria-label="Hjältsektion med bild på häst">
+      <div class="container hero-inner">
+        <h1>Allt om hästar</h1>
+        <p>Lär dig mer om fantastiska hästar – deras raser, skötsel och hur vi kan samarbeta med dem.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#raser">Utforska raser</a>
+          <a class="btn" href="#skotsel">Skötselguide</a>
+        </div>
+      </div>
+    </section>
+
+    <main id="main">
+      <section id="om" class="section">
+        <div class="container grid-2">
+          <div>
+            <h2>Om hästar</h2>
+            <p>
+              Hästen (<em>Equus ferus caballus</em>) är ett flockdjur med stark flyktinstinkt och
+              imponerande samarbetsförmåga. I tusentals år har människan använt hästar för
+              transport, jordbruk, sport och sällskap.
+            </p>
+            <ul class="facts">
+              <li>Medellivslängd: 25–30 år</li>
+              <li>Kommunicerar med kroppsspråk och ljud</li>
+              <li>Behöver daglig rörelse och social kontakt</li>
+            </ul>
+          </div>
+          <figure class="img-card">
+            <picture>
+              <source srcset="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=1200&q=60" media="(min-width: 800px)">
+              <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=800&q=60"
+                   width="800" height="533" loading="lazy" alt="Brun häst på fält i motljus.">
+            </picture>
+            <figcaption>Hästar trivs bäst i flock och i rörelse.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="raser" class="section alt">
+        <div class="container">
+          <h2>Populära raser</h2>
+          <div class="cards">
+            <article class="card reveal">
+              <img src="https://images.unsplash.com/photo-1523978591478-c753949ff840?auto=format&fit=crop&w=800&q=60" alt="Arabiskt fullblod i trav" loading="lazy" width="600" height="400">
+              <div class="card-body">
+                <h3>Arabiskt fullblod</h3>
+                <p>Känd för uthållighet, intelligens och välvd hals. Vanlig i distansritt.</p>
+              </div>
+            </article>
+            <article class="card reveal">
+              <img src="https://images.unsplash.com/photo-1546707012-c46675f1278f?auto=format&fit=crop&w=800&q=60" alt="Shetlandsponny på äng" loading="lazy" width="600" height="400">
+              <div class="card-body">
+                <h3>Shetlandsponny</h3>
+                <p>Liten men stark – populär barnponny och körhäst.</p>
+              </div>
+            </article>
+            <article class="card reveal">
+              <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=800&q=60" alt="Svenskt varmblod hoppar över hinder" loading="lazy" width="600" height="400">
+              <div class="card-body">
+                <h3>Svenskt varmblod</h3>
+                <p>Allround häst för hoppning och dressyr med bra temperament.</p>
+              </div>
+            </article>
+            <article class="card reveal">
+              <img src="https://images.unsplash.com/photo-1543852786-1cf6624b9987?auto=format&fit=crop&w=800&q=60" alt="Frieserhäst med högrest nacke" loading="lazy" width="600" height="400">
+              <div class="card-body">
+                <h3>Frieser</h3>
+                <p>Svart, kraftfull och elegant – används ofta i körning och show.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="skotsel" class="section">
+        <div class="container">
+          <h2>Grundläggande skötsel</h2>
+          <div class="tips">
+            <article class="tip reveal">
+              <h3>Foder &amp; vatten</h3>
+              <p>Fri tillgång till grovfoder av god kvalitet och friskt vatten. Kraftfoder vid behov.</p>
+            </article>
+            <article class="tip reveal">
+              <h3>Motion</h3>
+              <p>Daglig utevistelse och rörelse minskar stress och stärker leder och muskler.</p>
+            </article>
+            <article class="tip reveal">
+              <h3>Hovar</h3>
+              <p>Verkning/skoning var 6–8:e vecka. Kontrollera sprickor och värme.</p>
+            </article>
+            <article class="tip reveal">
+              <h3>Tänder</h3>
+              <p>Tandkoll 1–2 ggr/år. Tecken på problem: tappat foder, huvudskakningar.</p>
+            </article>
+            <article class="tip reveal">
+              <h3>Välfärd</h3>
+              <p>Social kontakt, tillgång till skydd och anpassad liggyta är grundläggande.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="galleri" class="section alt">
+        <div class="container">
+          <h2>Galleri</h2>
+          <div class="gallery">
+            <figure class="reveal">
+              <img src="https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?auto=format&fit=crop&w=900&q=60" loading="lazy" alt="Häst och ryttare i solnedgång.">
+            </figure>
+            <figure class="reveal">
+              <img src="https://images.unsplash.com/photo-1500043357865-c6b8827edf61?auto=format&fit=crop&w=900&q=60" loading="lazy" alt="Föl springer på grön äng.">
+            </figure>
+            <figure class="reveal">
+              <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=900&q=60" loading="lazy" alt="Hovdetalj i rörelse.">
+            </figure>
+            <figure class="reveal">
+              <img src="https://images.unsplash.com/photo-1496449903678-68ddcb189a24?auto=format&fit=crop&w=900&q=60" loading="lazy" alt="Hästar som betar tillsammans.">
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="kontakt" class="section">
+        <div class="container">
+          <h2>Kontakta oss</h2>
+          <form id="contact-form" novalidate>
+            <div class="form-grid">
+              <label> Namn
+                <input type="text" name="name" autocomplete="name" required />
+              </label>
+
+              <label> E-post
+                <input type="email" name="email" autocomplete="email" required />
+              </label>
+
+              <label class="span-2"> Meddelande
+                <textarea name="message" rows="5" required></textarea>
+              </label>
+
+              <label class="span-2 checkbox">
+                <input type="checkbox" name="consent" required />
+                Jag godkänner att mina uppgifter behandlas för att svara på mitt meddelande.
+              </label>
+
+              <button class="btn primary span-2" type="submit">Skicka</button>
+            </div>
+            <p id="form-status" role="status" aria-live="polite" class="form-status" hidden></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>&copy; <span id="year"></span> Hästar. Byggd med ren HTML, CSS och JavaScript.</p>
+        <a href="#" class="back-to-top" data-back-to-top>Upp ↥</a>
+      </div>
+    </footer>
+  </body>
+</html>
